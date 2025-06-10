@@ -1,11 +1,9 @@
 name: CI/CD
 
 on:
-  # Choose your workflow strategy!
-  pull_request:
+  push:
     branches:
-      - main
-
+      - main #
 jobs:
   buildAndTest:
     name: CI Pipeline
