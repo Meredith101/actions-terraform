@@ -63,11 +63,7 @@ jobs:
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4 # Use v4 for better OIDC support
-        with:
-          # IMPORTANT: Replace with your actual AWS Account ID
-          # This assumes you have set up an OIDC role for GitHub Actions in AWS IAM
-          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/github-actions-oidc-role
-          aws-region: eu-west-2
+        aws-region: eu-west-2
 
       - name: Get current date for image tag
         id: generate_tag # ID for this step to reference its output
