@@ -61,6 +61,19 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-2
 
+      - name: Get current date for image tag
+        id: generate_tag # Add an ID to this step
+        run: |
+          # Generate timestamp
+          TIMESTAMP=$(date +'%Y%m%d%H%M%S')
+          echo "Generated TIMESTAMP: $TIMESTAMP"
+
+          # IMPORTANT: Export to GITHUB_ENV for use in subsequent steps within this job
+          echo "IMAGE_TAG=$TIMESTAMP" >> $GITHUB_ENV
+
+          # IMPORTANT: Also export as a step output for passing to other jobs (e.g., 'deploy')
+          echo "dynamic_image_tag=$TIMESTAMP" >> $GITHUB_OUTPUT
+
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
