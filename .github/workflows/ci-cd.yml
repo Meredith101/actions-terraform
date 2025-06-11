@@ -113,13 +113,18 @@ jobs:
       - name: Deploy new application version to Elastic Beanstalk
         run: |
           echo "🔄 Checking if Elastic Beanstalk application exists..."
-          if ! aws elasticbeanstalk describe-applications --application-names "$ELASTIC_BEANSTALK_APP_NAME" >/dev/null 2>&1; then
+          APP_EXISTS=$(aws elasticbeanstalk describe-applications \
+            --query "Applications[?ApplicationName=='$ELASTIC_BEANSTALK_APP_NAME'].ApplicationName" \
+            --output text)
+
+          if [ "$APP_EXISTS" != "$ELASTIC_BEANSTALK_APP_NAME" ]; then
             echo "🚀 Creating Elastic Beanstalk application: $ELASTIC_BEANSTALK_APP_NAME"
             aws elasticbeanstalk create-application --application-name "$ELASTIC_BEANSTALK_APP_NAME"
 
             echo "⏳ Waiting for application to become fully ready..."
             for i in {1..10}; do
               APP_CHECK=$(aws elasticbeanstalk describe-applications \
+                --application-names "$ELASTIC_BEANSTALK_APP_NAME" \
                 --query "Applications[?ApplicationName=='$ELASTIC_BEANSTALK_APP_NAME'].ApplicationName" \
                 --output text)
 
