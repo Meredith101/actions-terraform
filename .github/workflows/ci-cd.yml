@@ -121,7 +121,10 @@ jobs:
             for i in {1..10}; do
            if aws elasticbeanstalk describe-application-versions \
            --application-name "$ELASTIC_BEANSTALK_APP_NAME" \
-           --max-items 1 >/dev/null 2>&1; then
+           --query "Applications[?ApplicationName=='$ELASTIC_BEANSTALK_APP_NAME'].ApplicationName" \
+           --output text)
+
+          if [ "$APP_READY" = "$ELASTIC_BEANSTALK_APP_NAME" ]; then
          echo "✅ Application is now fully ready"
          break
          fi
