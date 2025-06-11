@@ -119,39 +119,42 @@ jobs:
 
     - name: Deploy new application version to Elastic Beanstalk
       run: |
-       echo "🔄 Checking if Elastic Beanstalk application exists..."
-       if ! aws elasticbeanstalk describe-applications --application-names "$ELASTIC_BEANSTALK_APP_NAME" >/dev/null 2>&1; then
+        echo "🔄 Checking if Elastic Beanstalk application exists..."
+        if ! aws elasticbeanstalk describe-applications --application-names "$ELASTIC_BEANSTALK_APP_NAME" >/dev/null 2>&1; then
         echo "🚀 Creating Elastic Beanstalk application: $ELASTIC_BEANSTALK_APP_NAME"
         aws elasticbeanstalk create-application --application-name "$ELASTIC_BEANSTALK_APP_NAME"
-       else
-        echo "✅ Application exists: $ELASTIC_BEANSTALK_APP_NAME"
-       fi
+        else
+         echo "✅ Application exists: $ELASTIC_BEANSTALK_APP_NAME"
+        fi
 
-       echo "🔄 Checking if Elastic Beanstalk environment exists..."
-       if ! aws elasticbeanstalk describe-environments --application-name "$ELASTIC_BEANSTALK_APP_NAME" \
-         --environment-names "$ELASTIC_BEANSTALK_ENV_NAME" --query "Environments[?Status != 'Terminated']" | grep -q "$ELASTIC_BEANSTALK_ENV_NAME"; then
-       echo "🚀 Creating Elastic Beanstalk environment: $ELASTIC_BEANSTALK_ENV_NAME"
-       aws elasticbeanstalk create-environment \
+        echo "📦 Creating new application version"
+        aws elasticbeanstalk create-application-version \
+        --application-name "$ELASTIC_BEANSTALK_APP_NAME" \
+        --version-label "$GITHUB_SHA" \
+        --source-bundle S3Bucket="$S3_DEPLOY_BUCKET",S3Key="Dockerrun.aws.json"
+
+        echo "🔄 Checking if Elastic Beanstalk environment exists..."
+        ENV_EXISTS=$(aws elasticbeanstalk describe-environments \
+        --application-name "$ELASTIC_BEANSTALK_APP_NAME" \
+        --environment-names "$ELASTIC_BEANSTALK_ENV_NAME" \
+        --query "Environments[?Status != 'Terminated'].EnvironmentName" \
+        --output text)
+
+        if [ "$ENV_EXISTS" != "$ELASTIC_BEANSTALK_ENV_NAME" ]; then
+        echo "🚀 Creating Elastic Beanstalk environment: $ELASTIC_BEANSTALK_ENV_NAME"
+        aws elasticbeanstalk create-environment \
         --application-name "$ELASTIC_BEANSTALK_APP_NAME" \
         --environment-name "$ELASTIC_BEANSTALK_ENV_NAME" \
         --solution-stack-name "64bit Amazon Linux 2 v3.6.0 running Docker" \
         --version-label "$GITHUB_SHA" \
         --option-settings Namespace=aws:autoscaling:launchconfiguration,OptionName=InstanceType,Value=t2.micro \
-        --option-settings Namespace=aws:elasticbeanstalk:environment,OptionName=EnvironmentType,Value=SingleInstance \
-        --option-settings Namespace=aws:elasticbeanstalk:application:environment,OptionName=ENV,Value=production \
-        --source-bundle S3Bucket="$S3_DEPLOY_BUCKET",S3Key="Dockerrun.aws.json"
-       else
-         echo "✅ Environment exists: $ELASTIC_BEANSTALK_ENV_NAME"
-       fi
-
-       echo "📦 Creating new application version"
-       aws elasticbeanstalk create-application-version \
-        --application-name "$ELASTIC_BEANSTALK_APP_NAME" \
-        --version-label "$GITHUB_SHA" \
-        --source-bundle S3Bucket="$S3_DEPLOY_BUCKET",S3Key="Dockerrun.aws.json"
-
-       echo "🚀 Updating environment with new version"
-       aws elasticbeanstalk update-environment \
+                          Namespace=aws:elasticbeanstalk:environment,OptionName=EnvironmentType,Value=SingleInstance \
+                          Namespace=aws:elasticbeanstalk:application:environment,OptionName=ENV,Value=production
+        else
+        echo "✅ Environment exists: $ELASTIC_BEANSTALK_ENV_NAME"
+        echo "🚀 Updating environment with new version"
+        aws elasticbeanstalk update-environment \
         --application-name "$ELASTIC_BEANSTALK_APP_NAME" \
         --environment-name "$ELASTIC_BEANSTALK_ENV_NAME" \
         --version-label "$GITHUB_SHA"
+        fi
