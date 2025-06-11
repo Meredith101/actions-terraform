@@ -1,0 +1,2053 @@
+{
+    "PlatformSummaryList": [
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/.NET 8 running on 64bit Amazon Linux 2023/3.4.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": ".NET Core",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "3.4.2",
+            "PlatformBranchName": ".NET 8 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/.NET 9 running on 64bit Amazon Linux 2023/3.4.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": ".NET Core",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "3.4.2",
+            "PlatformBranchName": ".NET 9 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/.NET Core running on 64bit Amazon Linux 2/2.10.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": ".NET Core",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "2.10.1",
+            "PlatformBranchName": ".NET Core running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Corretto 11 running on 64bit Amazon Linux 2/3.8.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Corretto",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "3.8.2",
+            "PlatformBranchName": "Corretto 11 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Corretto 11 running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Corretto",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Corretto 11 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Corretto 17 running on 64bit Amazon Linux 2/3.8.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Corretto",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "3.8.2",
+            "PlatformBranchName": "Corretto 17 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Corretto 17 running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Corretto",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Corretto 17 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Corretto 21 running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Corretto",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Corretto 21 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Corretto 8 running on 64bit Amazon Linux 2/3.8.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Corretto",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "3.8.2",
+            "PlatformBranchName": "Corretto 8 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Corretto 8 running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Corretto",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Corretto 8 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/4.1.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.1.2",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/4.0.8",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.0.8",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/4.0.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.0.2",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/4.0.0",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.0.0",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/3.7.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.7.2",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/3.6.3",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.6.3",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/3.6.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.6.1",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/3.5.8",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.5.8",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/3.5.7",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.5.7",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/3.4.9",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.4.9",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/3.4.4",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.4.4",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/3.4.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.4.1",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/3.4.0",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.4.0",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/3.2.5",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.2.5",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/3.2.3",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.2.3",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.5.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.5.1",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.4.4",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.4.4",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.4.3",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.4.3",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.4.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.4.2",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.4.0",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.4.0",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.3.8",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.3.8",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.3.7",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.3.7",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.3.5",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.3.5",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.3.4",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.3.4",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.3.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.3.2",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.3.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.3.1",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.3.0",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.3.0",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.2.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.2.2",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.2.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.2.1",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.2.0",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.2.0",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.1.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.1.2",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.1.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.1.1",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.1.0",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.1.0",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.0.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.0.1",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.0.0",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Docker",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.0.0",
+            "PlatformBranchName": "Docker running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/ECS running on 64bit Amazon Linux 2/3.4.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "ECS",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "3.4.2",
+            "PlatformBranchName": "ECS running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/ECS running on 64bit Amazon Linux 2/3.3.6",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "ECS",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.3.6",
+            "PlatformBranchName": "ECS running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/ECS running on 64bit Amazon Linux 2023/4.1.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "ECS",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.1.2",
+            "PlatformBranchName": "ECS running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/ECS running on 64bit Amazon Linux 2023/4.0.10",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "ECS",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.0.10",
+            "PlatformBranchName": "ECS running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Elastic Beanstalk Packer Builder/2.6.33",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2018.03",
+            "SupportedTierList": [
+                "WebServer/Standard"
+            ],
+            "SupportedAddonList": [
+                "Log/S3"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "2.6.33",
+            "PlatformBranchName": "Elastic Beanstalk Packer Builder",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Go 1 running on 64bit Amazon Linux 2/3.12.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Go",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "3.12.2",
+            "PlatformBranchName": "Go 1 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Go 1 running on 64bit Amazon Linux 2023/4.3.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Go",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.3.2",
+            "PlatformBranchName": "Go 1 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/IIS 10.0 running on 64bit Windows Server 2016/2.19.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "IIS",
+            "OperatingSystemName": "Windows Server",
+            "OperatingSystemVersion": "2016",
+            "SupportedTierList": [
+                "WebServer/Standard"
+            ],
+            "SupportedAddonList": [
+                "Log/S3"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "2.19.1",
+            "PlatformBranchName": "IIS 10.0 running on 64bit Windows Server 2016",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/IIS 10.0 running on 64bit Windows Server 2019/2.19.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "IIS",
+            "OperatingSystemName": "Windows Server",
+            "OperatingSystemVersion": "2019",
+            "SupportedTierList": [
+                "WebServer/Standard"
+            ],
+            "SupportedAddonList": [
+                "Log/S3"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "2.19.1",
+            "PlatformBranchName": "IIS 10.0 running on 64bit Windows Server 2019",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/IIS 10.0 running on 64bit Windows Server 2022/2.19.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "IIS",
+            "OperatingSystemName": "Windows Server",
+            "OperatingSystemVersion": "2022",
+            "SupportedTierList": [
+                "WebServer/Standard"
+            ],
+            "SupportedAddonList": [
+                "Log/S3"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "2.19.1",
+            "PlatformBranchName": "IIS 10.0 running on 64bit Windows Server 2022",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/IIS 10.0 running on 64bit Windows Server 2025/2.19.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "IIS",
+            "OperatingSystemName": "Windows Server",
+            "OperatingSystemVersion": "2025",
+            "SupportedTierList": [
+                "WebServer/Standard"
+            ],
+            "SupportedAddonList": [
+                "Log/S3"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "2.19.1",
+            "PlatformBranchName": "IIS 10.0 running on 64bit Windows Server 2025",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/IIS 10.0 running on 64bit Windows Server Core 2016/2.19.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "IIS",
+            "OperatingSystemName": "Windows Server Core",
+            "OperatingSystemVersion": "2016",
+            "SupportedTierList": [
+                "WebServer/Standard"
+            ],
+            "SupportedAddonList": [
+                "Log/S3"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "2.19.1",
+            "PlatformBranchName": "IIS 10.0 running on 64bit Windows Server Core 2016",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/IIS 10.0 running on 64bit Windows Server Core 2019/2.19.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "IIS",
+            "OperatingSystemName": "Windows Server Core",
+            "OperatingSystemVersion": "2019",
+            "SupportedTierList": [
+                "WebServer/Standard"
+            ],
+            "SupportedAddonList": [
+                "Log/S3"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "2.19.1",
+            "PlatformBranchName": "IIS 10.0 running on 64bit Windows Server Core 2019",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/IIS 10.0 running on 64bit Windows Server Core 2022/2.19.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "IIS",
+            "OperatingSystemName": "Windows Server Core",
+            "OperatingSystemVersion": "2022",
+            "SupportedTierList": [
+                "WebServer/Standard"
+            ],
+            "SupportedAddonList": [
+                "Log/S3"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "2.19.1",
+            "PlatformBranchName": "IIS 10.0 running on 64bit Windows Server Core 2022",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/IIS 10.0 running on 64bit Windows Server Core 2025/2.19.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "IIS",
+            "OperatingSystemName": "Windows Server Core",
+            "OperatingSystemVersion": "2025",
+            "SupportedTierList": [
+                "WebServer/Standard"
+            ],
+            "SupportedAddonList": [
+                "Log/S3"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "2.19.1",
+            "PlatformBranchName": "IIS 10.0 running on 64bit Windows Server Core 2025",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Node.js 14 running on 64bit Amazon Linux 2/5.3.0",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Node.js",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "5.3.0",
+            "PlatformBranchName": "Node.js 14 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Retired"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Node.js 18 running on 64bit Amazon Linux 2/5.10.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Node.js",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "5.10.2",
+            "PlatformBranchName": "Node.js 18 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Deprecated"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Node.js 18 running on 64bit Amazon Linux 2023/6.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Node.js",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "6.5.2",
+            "PlatformBranchName": "Node.js 18 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Deprecated"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Node.js 18 running on 64bit Amazon Linux 2023/6.0.3",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Node.js",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "6.0.3",
+            "PlatformBranchName": "Node.js 18 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Deprecated"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Node.js 20 running on 64bit Amazon Linux 2023/6.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Node.js",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "6.5.2",
+            "PlatformBranchName": "Node.js 20 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Node.js 22 running on 64bit Amazon Linux 2023/6.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Node.js",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "6.5.2",
+            "PlatformBranchName": "Node.js 22 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/PHP 8.1 running on 64bit Amazon Linux 2/3.9.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "PHP",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "3.9.2",
+            "PlatformBranchName": "PHP 8.1 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/PHP 8.1 running on 64bit Amazon Linux 2023/4.6.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "PHP",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.6.2",
+            "PlatformBranchName": "PHP 8.1 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/PHP 8.2 running on 64bit Amazon Linux 2023/4.6.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "PHP",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.6.2",
+            "PlatformBranchName": "PHP 8.2 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/PHP 8.3 running on 64bit Amazon Linux 2023/4.6.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "PHP",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.6.2",
+            "PlatformBranchName": "PHP 8.3 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/PHP 8.4 running on 64bit Amazon Linux 2023/4.6.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "PHP",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.6.2",
+            "PlatformBranchName": "PHP 8.4 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.11 running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Python 3.11 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.11 running on 64bit Amazon Linux 2023/4.1.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.1.1",
+            "PlatformBranchName": "Python 3.11 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.11 running on 64bit Amazon Linux 2023/4.0.9",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.0.9",
+            "PlatformBranchName": "Python 3.11 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.11 running on 64bit Amazon Linux 2023/4.0.5",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.0.5",
+            "PlatformBranchName": "Python 3.11 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.11 running on 64bit Amazon Linux 2023/4.0.3",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.0.3",
+            "PlatformBranchName": "Python 3.11 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.12 running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Python 3.12 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.12 running on 64bit Amazon Linux 2023/4.3.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.3.1",
+            "PlatformBranchName": "Python 3.12 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.13 running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Python 3.13 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.13 running on 64bit Amazon Linux 2023/4.4.1",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.4.1",
+            "PlatformBranchName": "Python 3.13 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.13 running on 64bit Amazon Linux 2023/4.4.0",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "4.4.0",
+            "PlatformBranchName": "Python 3.13 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.7 running on 64bit Amazon Linux 2/3.5.12",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.5.12",
+            "PlatformBranchName": "Python 3.7 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Retired"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.8 running on 64bit Amazon Linux 2/3.7.3",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.7.3",
+            "PlatformBranchName": "Python 3.8 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Retired"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.8 running on 64bit Amazon Linux 2/3.3.4",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformVersion": "3.3.4",
+            "PlatformBranchName": "Python 3.8 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Retired"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.9 running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Python",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Python 3.9 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Ruby 3.2 running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Ruby",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Ruby 3.2 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Ruby 3.3 running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Ruby",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Ruby 3.3 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Ruby 3.4 running on 64bit Amazon Linux 2023/4.5.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Ruby",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.5.2",
+            "PlatformBranchName": "Ruby 3.4 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Tomcat 10 with Corretto 17 running on 64bit Amazon Linux 2023/5.6.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Tomcat",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "5.6.2",
+            "PlatformBranchName": "Tomcat 10 with Corretto 17 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Tomcat 10 with Corretto 21 running on 64bit Amazon Linux 2023/5.6.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Tomcat",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "5.6.2",
+            "PlatformBranchName": "Tomcat 10 with Corretto 21 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Tomcat 11 with Corretto 17 running on 64bit Amazon Linux 2023/5.6.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Tomcat",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "5.6.2",
+            "PlatformBranchName": "Tomcat 11 with Corretto 17 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Tomcat 11 with Corretto 21 running on 64bit Amazon Linux 2023/5.6.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Tomcat",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "5.6.2",
+            "PlatformBranchName": "Tomcat 11 with Corretto 21 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Tomcat 9 with Corretto 11 running on 64bit Amazon Linux 2/4.8.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Tomcat",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.8.2",
+            "PlatformBranchName": "Tomcat 9 with Corretto 11 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Tomcat 9 with Corretto 11 running on 64bit Amazon Linux 2023/5.6.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Tomcat",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "5.6.2",
+            "PlatformBranchName": "Tomcat 9 with Corretto 11 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Tomcat 9 with Corretto 17 running on 64bit Amazon Linux 2023/5.6.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Tomcat",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2023",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "5.6.2",
+            "PlatformBranchName": "Tomcat 9 with Corretto 17 running on 64bit Amazon Linux 2023",
+            "PlatformBranchLifecycleState": "Supported"
+        },
+        {
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Tomcat 9 with Corretto 8 running on 64bit Amazon Linux 2/4.8.2",
+            "PlatformOwner": "AWSElasticBeanstalk",
+            "PlatformStatus": "Ready",
+            "PlatformCategory": "Tomcat",
+            "OperatingSystemName": "Amazon Linux",
+            "OperatingSystemVersion": "2",
+            "SupportedTierList": [
+                "WebServer/Standard",
+                "Worker/SQS/HTTP"
+            ],
+            "SupportedAddonList": [
+                "Log/CloudWatch",
+                "Log/S3",
+                "Monitoring/Healthd",
+                "WorkerDaemon/SQSD"
+            ],
+            "PlatformLifecycleState": "Recommended",
+            "PlatformVersion": "4.8.2",
+            "PlatformBranchName": "Tomcat 9 with Corretto 8 running on 64bit Amazon Linux 2",
+            "PlatformBranchLifecycleState": "Supported"
+        }
+    ]
+}
