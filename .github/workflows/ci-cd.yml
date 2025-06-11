@@ -119,18 +119,17 @@ jobs:
 
           echo "⏳ Waiting for application to become fully ready..."
           for i in {1..10}; do
-           APP_READY=$(aws elasticbeanstalk describe-applications \
-             --application-names "$ELASTIC_BEANSTALK_APP_NAME" \
-             --query "Applications[?ApplicationName=='$ELASTIC_BEANSTALK_APP_NAME'].ApplicationName" \
-             --output text)
+           APP_CHECK=$(aws elasticbeanstalk describe-applications \
+           --query "Applications[?ApplicationName=='$ELASTIC_BEANSTALK_APP_NAME'].ApplicationName" \
+           --output text)
 
-           if [ "$APP_READY" = "$ELASTIC_BEANSTALK_APP_NAME" ]; then
-             echo "✅ Application is now fully ready"
-             break
-           fi
+         if [ "$APP_CHECK" = "$ELASTIC_BEANSTALK_APP_NAME" ]; then
+           echo "✅ Application is now fully available"
+           break
+         fi
 
-           echo "⏳ Still waiting for Elastic Beanstalk to finish initializing the application..."
-           sleep 5
+         echo "⏳ Still waiting... ($i/10)"
+         sleep 5
          done
 
 
