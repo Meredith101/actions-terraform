@@ -168,9 +168,11 @@ jobs:
             aws elasticbeanstalk create-environment \
               --application-name "$ELASTIC_BEANSTALK_APP_NAME" \
               --environment-name "$ELASTIC_BEANSTALK_ENV_NAME" \
-              --solution-stack-name "64bit Amazon Linux 2 v4.1.2 running Docker" \
+              --platform-arn "arn:aws:elasticbeanstalk:eu-west-2::platform/Docker running on 64bit Amazon Linux 2/4.1.2" \
               --version-label "$GITHUB_SHA" \
-              --option-settings Namespace=aws:autoscaling:launchconfiguration,OptionName=InstanceType,Value=t2.micro \
+              --option-settings \
+                               Namespace=aws:autoscaling:launchconfiguration,OptionName=IamInstanceProfile,Value=aws-elasticbeanstalk-ec2-role \
+                               Namespace=aws:autoscaling:launchconfiguration,OptionName=InstanceType,Value=t2.micro \
                                Namespace=aws:elasticbeanstalk:environment,OptionName=EnvironmentType,Value=SingleInstance \
                                Namespace=aws:elasticbeanstalk:application:environment,OptionName=ENV,Value=production
           else
