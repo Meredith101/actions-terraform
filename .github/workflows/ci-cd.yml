@@ -76,7 +76,7 @@ jobs:
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
-  deploy:
+deploy:
   runs-on: ubuntu-latest
   needs: push
   env:
@@ -162,3 +162,4 @@ jobs:
             --environment-name "$ELASTIC_BEANSTALK_ENV_NAME" \
             --version-label "$GITHUB_SHA"
         fi
+      
