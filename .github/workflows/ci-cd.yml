@@ -117,15 +117,18 @@ jobs:
            echo "🚀 Creating Elastic Beanstalk application: $ELASTIC_BEANSTALK_APP_NAME"
            aws elasticbeanstalk create-application --application-name "$ELASTIC_BEANSTALK_APP_NAME"
 
-           echo "⏳ Waiting for application to become available..."
-           for i in {1..10}; do
-            if aws elasticbeanstalk describe-applications --application-names "$ELASTIC_BEANSTALK_APP_NAME" >/dev/null 2>&1; then
-               echo "✅ Application is now available"
-               break
-             fi
-             echo "⏳ Still waiting..."
-             sleep 5
-           done
+           echo "⏳ Waiting for application to become fully ready..."
+            for i in {1..10}; do
+           if aws elasticbeanstalk describe-application-versions \
+           --application-name "$ELASTIC_BEANSTALK_APP_NAME" \
+           --max-items 1 >/dev/null 2>&1; then
+         echo "✅ Application is now fully ready"
+         break
+         fi
+          echo "⏳ Still waiting for Elastic Beanstalk to finish initializing the application..."
+         sleep 5
+         done
+
          else
            echo "✅ Application exists: $ELASTIC_BEANSTALK_APP_NAME"
          fi
