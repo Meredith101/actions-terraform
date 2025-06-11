@@ -1,18 +1,17 @@
-name: CI/CD # The name of your workflow, visible in the GitHub Actions tab
+name: CI/CD
 
 on:
-  push:
+  # Choose your workflow strategy!
+  pull_request:
     branches:
-      - main # This workflow will trigger automatically on pushes to the 'main' branch
+      - main
 
 jobs:
-  # --- CI Pipeline Job: Builds and tests your application ---
   buildAndTest:
     name: CI Pipeline
-    runs-on: ubuntu-latest # Specifies the type of runner to use
+    runs-on: ubuntu-latest
 
     env:
-      # Environment variables for your test setup
       NODE_ENV: test
       DB_HOST: localhost
       POSTGRES_USER: test
@@ -20,14 +19,11 @@ jobs:
       POSTGRES_DB: test_db
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4 # Essential step to get your repository code onto the runner
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4 # Sets up Node.js environment
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
 
       - name: Set up PostgreSQL
-        uses: Harmon758/postgresql-action@v1 # Action to start a PostgreSQL service for testing
+        uses: Harmon758/postgresql-action@v1
         with:
           postgresql version: '13'
           postgresql db: ${{ env.POSTGRES_DB }}
@@ -35,189 +31,93 @@ jobs:
           postgresql password: ${{ env.POSTGRES_PASSWORD }}
 
       - name: Install Angular dependencies
-        run: npm ci # Installs dependencies for your Angular frontend
+        run: npm ci
 
       - name: Run Angular Tests
-        run: npm run test:coverage # Executes Angular tests and collects coverage
+        run: npm run test:coverage
 
       - name: Install Express dependencies
-        run: npm --prefix ./server ci # Installs dependencies for your Express backend
+        run: npm --prefix ./server ci
 
       - name: Run Linting
-        run: npm --prefix ./server run lint # Runs linting checks on your Express code
+        run: npm --prefix ./server run lint 
 
       - name: Run Migration
-        run: npm --prefix ./server run migrate # Runs database migrations
+        run: npm --prefix ./server run migrate
 
       - name: Run Express Tests
         run: npm --prefix ./server run coverage
 
-  # --- Push Image Job: Builds and pushes your Docker image to ECR ---
-  push_image:
+  push:
     runs-on: ubuntu-latest
-    needs: buildAndTest # This job will only run if 'buildAndTest' job completes successfully
-    outputs:
-      # This output will pass the generated image tag to the 'deploy' job
-      image_tag_output: ${{ steps.generate_tag.outputs.dynamic_image_tag }}
+    needs: buildAndTest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Check out code
+        uses: actions/checkout@v2
 
-      - name: Configure AWS credentials # Now using direct access keys from GitHub secrets
-        uses: aws-actions/configure-aws-credentials@v4
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }} # Ensure this secret is set in GitHub
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # Ensure this secret is set in GitHub
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-2
 
-      - name: Get current date for image tag
-        id: generate_tag # ID for this step to reference its output
-        run: |
-          # Generates a timestamp (e.g., 20250610164849) to use as a unique Docker image tag
-          TIMESTAMP=$(date +'%Y%m%d%H%M%S')
-          echo "Generated TIMESTAMP for image tag: $TIMESTAMP"
-
-          # IMPORTANT: Exports 'IMAGE_TAG' as an environment variable for subsequent steps in THIS job
-          echo "IMAGE_TAG=$TIMESTAMP" >> $GITHUB_ENV
-
-          # IMPORTANT: Exports 'dynamic_image_tag' as a step output for other jobs to consume
-          echo "dynamic_image_tag=$TIMESTAMP" >> $GITHUB_OUTPUT
-
       - name: Login to Amazon ECR
-        uses: aws-actions/amazon-ecr-login@v2 # Logs into your Amazon ECR registry
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
 
       - name: Build, tag, and push image to Amazon ECR
         env:
-          ECR_REPOSITORY_NAME: "sams" # Your specific ECR repository name
-          # 'IMAGE_TAG' is now available from the GITHUB_ENV set in the previous step
-          IMAGE_TAG: ${{ env.IMAGE_TAG }}
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: "sams"
+          IMAGE_TAG: "sams-image"
         run: |
-          # Constructs the full Docker image URI using the ECR registry (from login-ecr) and the tag
-          FULL_IMAGE_URI="${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY_NAME }}:${{ env.IMAGE_TAG }}"
-          LATEST_IMAGE_URI="${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY_NAME }}:latest"
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
-          # Builds your Docker image (assuming Dockerfile is in the repository root)
-          docker build -t "$FULL_IMAGE_URI" .
-          docker push "$FULL_IMAGE_URI"       # Pushes the uniquely tagged image to ECR
-
-          docker tag "$FULL_IMAGE_URI" "$LATEST_IMAGE_URI" # Tags the same image as 'latest'
-          docker push "$LATEST_IMAGE_URI"                   # Pushes the 'latest' tag to ECR
-
-  # --- Deploy Job: Provisions/updates infrastructure and deploys to Elastic Beanstalk ---
   deploy:
     runs-on: ubuntu-latest
-    needs: push_image # This job will only run if 'push_image' job completes successfully
+    needs: push
     env:
-      # AWS Region for all AWS CLI and Terraform commands in this job
-      AWS_REGION: eu-west-2
-
-      # ECR Details (must match the repository name used in 'push_image' job)
-      ECR_REPOSITORY_NAME: "sams"
-      # Retrieve the exact image tag pushed from the 'push_image' job's output
-      DEPLOY_IMAGE_TAG: ${{ needs.push_image.outputs.image_tag_output }}
-
-      # Elastic Beanstalk Application & Environment Names
-      ELASTIC_BEANSTALK_APP_NAME: "sams-app"
-      ELASTIC_BEANSTALK_ENV_NAME: "sams-env"
-
-      # S3 Bucket for Elastic Beanstalk deployment bundles.
-      # IMPORTANT: This bucket should be defined and managed by your Terraform configuration
-      S3_DEPLOY_BUCKET_NAME: "meredith-bucket" # Ensure this matches your Terraform configuration
+      CONTAINER_REGISTRY_URL: "664047078509.dkr.ecr.eu-west-2.amazonaws.com/sams"
+      CONTAINER_REPOSITORY_NAME: "sams"
+      S3_DEPLOY_BUCKET: "meredith-bucket"
+      ELASTIC_BEANSTALK_APP_NAME: "sams-eb-app"
+      ELASTIC_BEANSTALK_ENV_NAME: "sams-eb-env"
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
-      - name: Configure AWS credentials # Now using direct access keys from GitHub secrets
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }} # Ensure this secret is set in GitHub
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # Ensure this secret is set in GitHub
-          aws-region: ${{ env.AWS_REGION }}
+      - name: Set permissions for create_dockerrun.sh
+        run: chmod +x ./aws/create_dockerrun.sh
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
-        with:
-          # Specify the Terraform version to ensure consistent behavior
-          terraform_version: 1.6.0
+      - name: Create Dockerrun.aws.json
+        run: ./create_dockerrun.sh
+        working-directory: ./aws
+        env:
+          CONTAINER_REGISTRY_URL: ${{ env.CONTAINER_REGISTRY_URL }}
+          CONTAINER_REPOSITORY_NAME: ${{ env.CONTAINER_REPOSITORY_NAME }}
+          GITHUB_SHA: ${{ github.sha }}
 
-      - name: Create Dockerrun.aws.json and deployment bundle
-        id: create_bundle # Unique ID for this step
+      - name: List contents in the aws directory
+        run: ls -lah ./aws/
+
+      - name: Copy Dockerrun.aws.json to S3
         run: |
-          # Constructs the full ECR image URI using the generated tag from the previous job
-          # NOTE: We're still using secrets.AWS_ACCOUNT_ID here as part of the ECR registry URI.
-          # If you don't have this as a secret, you'll need to hardcode your AWS Account ID here.
-          ECR_REGISTRY_URI="${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com"
-          FULL_ECR_IMAGE_URI="${ECR_REGISTRY_URI}/${{ env.ECR_REPOSITORY_NAME }}:${{ env.DEPLOY_IMAGE_TAG }}"
+          echo "Copying Dockerrun.aws.json to S3"
+          aws s3 cp Dockerrun.aws.json "s3://$S3_DEPLOY_BUCKET"
 
-          # Dynamically creates the Dockerrun.aws.json file in the repository root
-          # This file tells Elastic Beanstalk how to run your Docker container
-          cat <<EOF > Dockerrun.aws.json
-          {
-            "AWSEBDockerrunVersion": "1",
-            "Image": {
-              "Name": "${FULL_ECR_IMAGE_URI}",
-              "Update": "true"
-            },
-            "Ports": [
-              {
-                "ContainerPort": 80 # <<< IMPORTANT: Adjust this to your Node.js application's actual listening port inside the Docker container (e.g., 80, 3000, 8080). Elastic Beanstalk will map this to port 80/443 on the load balancer.
-              }
-            ],
-            "Volumes": [],
-            "Logging": "/var/log/nginx" # Standard Nginx logs for the proxy, adjust if your Docker image has different logging needs
-          }
-          EOF
-
-          # Creates a uniquely named .zip bundle containing the Dockerrun.aws.json file
-          # This bundle is what Elastic Beanstalk uses for deployments
-          BUNDLE_NAME="${{ env.ELASTIC_BEANSTALK_APP_NAME }}-${{ env.DEPLOY_IMAGE_TAG }}.zip"
-          zip -r "$BUNDLE_NAME" Dockerrun.aws.json
-
-          # Outputs the bundle name for use in subsequent steps (especially by Terraform)
-          echo "bundle_name=$BUNDLE_NAME" >> $GITHUB_OUTPUT
-
-      - name: Upload deployment bundle to S3
+      - name: Deploy new application version to Elastic Beanstalk
         run: |
-          # Copies the created .zip bundle to your designated S3 deployment bucket
-          aws s3 cp "${{ steps.create_bundle.outputs.bundle_name }}" "s3://${{ env.S3_DEPLOY_BUCKET_NAME }}/"
-
-      - name: Terraform Init
-        id: init
-        run: terraform init \
-          -backend-config="bucket=${{ env.S3_DEPLOY_BUCKET_NAME }}" \
-          -backend-config="key=terraform/terraform.tfstate" \
-          -backend-config="region=${{ env.AWS_REGION }}"
-        working-directory: ./terraform # Ensures Terraform commands run from the 'terraform' directory
-
-      - name: Terraform Plan
-        id: plan
-        run: terraform plan -input=false -out=tfplan \
-          -var="project_name=${{ env.ELASTIC_BEANSTALK_APP_NAME }}" \
-          -var="environment=${{ env.ELASTIC_BEANSTALK_ENV_NAME }}" \
-          -var="ecr_repository_name=${{ env.ECR_REPOSITORY_NAME }}" \
-          -var="app_version_label=${{ env.DEPLOY_IMAGE_TAG }}" \
-          -var="db_password=${{ secrets.TF_VAR_db_password }}" \
-          -var="vpc_id=${{ secrets.TF_VAR_vpc_id }}" \
-          -var="eb_subnet_ids=[${{ secrets.TF_VAR_eb_subnet_ids }}]" \
-          -var="s3_bundle_key=${{ steps.create_bundle.outputs.bundle_name }}" # Pass the S3 object key to Terraform
-        working-directory: ./terraform
-
-      - name: Terraform Apply
-        id: apply
-        run: terraform apply -input=false tfplan
-        working-directory: ./terraform
-
-      - name: Get Elastic Beanstalk Environment URL
-        id: get_url
-        run: |
-          # Retrieves the deployed Elastic Beanstalk environment URL from Terraform outputs
-          EB_URL=$(terraform output -raw elastic_beanstalk_environment_url)
-          echo "eb_url=${EB_URL}" >> $GITHUB_OUTPUT
-        working-directory: ./terraform
-
-      - name: Echo EB URL
-        run: |
-          echo "Elastic Beanstalk Application deployed successfully!"
-          echo "URL: ${{ steps.get_url.outputs.eb_url }}"
+          echo "Deploying new application version"
+          aws elasticbeanstalk create-application-version \
+            --application-name "$ELASTIC_BEANSTALK_APP_NAME" \
+            --version-label "$GITHUB_SHA" \
+            --source-bundle S3Bucket="$S3_DEPLOY_BUCKET",S3Key="Dockerrun.aws.json" \
+            --no-auto-create-application
+          aws elasticbeanstalk update-environment \
+            --application-name "$ELASTIC_BEANSTALK_APP_NAME" \
+            --environment-name "$ELASTIC_BEANSTALK_ENV_NAME" \
+            --version-label "$GITHUB_SHA"
